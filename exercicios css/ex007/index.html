@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            margin: auto;
+            width: 1000px;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+            font-size: 20px;
+            background-color: #F0F0F0;
+            color: rgb(237, 237, 237);
+        }
+        header{
+            background-color: #CF8D4E;
+            padding: 10px;
+        }
+        main{
+            background-color: rgb(62, 130, 107);
+            padding: 15px;
+            border-radius: 20px;
+        }
+        nav{
+            padding: 3px;
+            text-align: right;
+            box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.273);
+        }
+        nav > a{
+            text-decoration: none;
+            padding: 2px;
+            color: rgb(237, 237, 237);
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        nav > a:hover{
+            transition: 0.5s;
+            color: aqua;
+            text-decoration: underline;
+        }
+        footer{
+            text-align: center;
+            padding: 5px;
+            background-color: rgb(19, 19, 19);
+        }
+        footer > p{
+            margin: 0;
+            font-size: 16px;
+        }
+        aside{
+            text-align: right;
+        }
+        .bola{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            color: rgba(20, 34, 141, 0.746);
+            
+            animation: float 0.5s ease-in-out infinite;
+        }
+        @keyframes float{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-30px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Notícias</a>
+            <a href="#">Esportes</a>
+            <a href="#">Finanças</a>
+            <a href="#">Beleza</a>
+            <a href="#">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Fim da Guerra [Russia x Uncrânia]</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquam numquam ex delectus enim, quaerat natus provident velit magnam deserunt magni eligendi ratione molestias, rerum non vero repellendus harum ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus magni quam, est iure ipsa commodi. Consectetur eos, perferendis quidem est accusantium quia, quos ad officiis cumque totam animi, assumenda quaerat.
+                </p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quos expedita et ullam tenetur maiores, ipsam dolore distinctio quas recusandae temporibus quasi fugiat facilis doloremque repudiandae aliquid numquam laudantium corrupti?</p>
+            </article>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Queda na produção de chips da China</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in eos, praesentium magni eius corporis, quaerat aperiam voluptates hic velit soluta, porro repellat suscipit doloremque atque illum corrupti et ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sed eum, soluta voluptates laboriosam sit alias? Reprehenderit et quia pariatur minima quos nobis dolorum rerum, explicabo error voluptas distinctio quas.</p>
+                <aside>
+                    <p>Made in China</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Laccer pegou Blade em Honkai: Star Rail</h2>
+                <p>Segundo o próprio Laccer, ele está muito feliz agora que conseguiu o husbando Blade e ainda tem tiros o suficiente para garantir a Kafka. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim vero nisi ex sint ab dicta sit maiores fuga asperiores minus hic voluptas necessitatibus, deleniti excepturi aliquam facere laboriosam id voluptatibus!</p>
+                <aside>
+                    <p>By Laccer</p>
+                </aside>
+            </article>
+        </section>
+        <div class="bola">
+            <p>Pokémon</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Todos os Direitos Reservados Laccer.</p>
+    </footer>
+</body>
+</html>

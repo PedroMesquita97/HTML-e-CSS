@@ -1,0 +1,16 @@
+Caso alguém se interesse por fazer a propriedade funcionar sem nenhum problema de corte, cria a imagem como o professor guanabara sugeriu, mas seja preciso para que cada quadradinho da imagem tenha o exato mesmo tamanho. No momento de fazer a declaração, você vai usar:
+
+border-image: url ('nome-da-imagem.png') 33% round; ****
+
+Isso deve fazer a borda funcionar e ser responsiva.
+
+<style>
+	h1{
+	   border: 20px solid black;
+	   padding: 10px;
+	   border-image-source: url('borda.png');
+	   border-image-slice: 27; //tbm pode ser 33%
+	   border-image-repeat: repeat; ****
+	}
+
+</style>
